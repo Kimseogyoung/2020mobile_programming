@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cmdArea2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:checked="true"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"/>
+        <Button
+            android:id="@+id/removebtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_height="35dp"
+            android:text="x"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="name.."
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="contents.."
+                android:textColor="#0028B5"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#E3E0E0"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="수량"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/numdownbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/numtext"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/numupbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="+" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

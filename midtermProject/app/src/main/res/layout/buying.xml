@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:rowCount="9"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:background="#F39A9A"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="결제"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center_vertical"
+        android:layout_rowWeight="0.5"
+        android:textSize="17dp"
+        android:text="구매목록"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ScrollView
+        android:layout_height="50dp"
+        android:layout_rowWeight="2"
+        android:layout_gravity="fill"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#DFDFDF"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/orderedItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="라이언인형\ndsf\nafdsfd\dfsa\nna\nds\nfdsf\ndsafdf"
+            android:textSize="14dp" />
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/totalPrice2"
+        android:layout_gravity="fill"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:layout_rowWeight="1"
+        android:text="결제 총합 : "
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center_vertical"
+        android:textSize="17dp"
+        android:layout_rowWeight="1"
+        android:text="배송 정보"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#D8D8D8"
+        />
+    <GridLayout
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="6"
+        android:layout_gravity="fill"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EAEAEA">
+
+        <TextView
+            android:layout_gravity="fill"
+            android:gravity="center_vertical"
+            android:text="주문자 명"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:id="@+id/info_name"
+            android:layout_gravity="fill"
+            android:text=""/>
+
+        <TextView
+            android:layout_gravity="fill"
+            android:gravity="center_vertical"
+            android:text="연락처"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/info_phonenum"
+            android:layout_gravity="fill"
+            android:text=""/>
+
+        <TextView
+            android:layout_gravity="fill"
+            android:gravity="center_vertical"
+            android:text="배송지"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/info_address"
+            android:layout_gravity="fill"
+            android:text=""/>
+
+        <TextView
+            android:layout_gravity="fill"
+            android:gravity="center_vertical"
+            android:text="요청사항"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/info_request"
+            android:layout_gravity="fill"
+            android:text=""/>
+    </GridLayout>
+    <GridLayout
+        android:layout_gravity="fill"
+        android:layout_rowWeight="0.8"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="fill"
+            android:text="결제수단 선택"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp" />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/rd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="무통장 입금"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="신용 카드"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="카카오 페이"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="휴대폰 결제"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="모바일 티머니" />
+
+
+
+
+        </RadioGroup>
+
+    </GridLayout>
+
+
+    <CheckBox
+        android:id="@+id/essential_check"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:text="결제 동의"
+        android:background="#DFDFDF"/>
+    <Button
+        android:id="@+id/buyingbtn3"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:background="#F39A9A"
+        android:text="구매" />
+
+
+
+
+</GridLayout>
